@@ -1,0 +1,89 @@
+﻿@model PriceListViewModel
+
+@{ Layout = "_PanelLayout"; }
+
+<div class="card">
+    
+    <div class="card-body">
+
+        <h4 class="card-title">Editar Lista de Precios</h4>
+
+        @using (Html.BeginForm("edit", "PriceList", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row m-5">
+
+            @Html.TextBoxFor(model => model.ID, new { @class = "form-control", @type = "hidden" })
+
+            <div class="col-sm-4">
+
+                @Html.LabelFor(model => model.ValidityDate, new { @class = "control-label" })
+
+                @Html.EditorFor(model => model.ValidityDate, new { htmlAttributes = new { @class = "form-control" } })
+
+                @Html.ValidationMessageFor(model => model.ValidityDate, "", new { @class = "text-danger" })
+
+            </div>
+
+            <div class="col-sm-4">
+
+                @Html.LabelFor(model => model.Observation, new { @class = "control-label" })
+
+                @Html.TextAreaFor(model => model.Observation, new { @class = "form-control" })
+
+                @Html.ValidationMessageFor(model => model.Observation, "", new { @class = "text-danger" })
+
+            </div>
+
+        </div>
+
+        <div class="row m-5">
+
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Editorial, new { @class = "form-control", @type = "hidden" })
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Editorial</th>
+                            <th scope="col">Autor</th>
+                            <th scope="col">T&iacute;tulo</th>
+                            <th scope="col">Precio Actual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @for (var i = 0; i < Model.Books.Count(); i++)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(m => m.Books[i].Editorial, new { @class = "form-control", @autofocus = "autofocus" })</td>
+                    <td>@Html.DisplayFor(m => m.Books[i].Author, new { @class = "form-control", @autofocus = "autofocus" })</td>
+                    <td>@Html.DisplayFor(m => m.Books[i].Title, new { @class = "form-control border-0", @autofocus = "autofocus", @readonly = "readonly" })</td>
+                    <td>@Html.TextBoxFor(m => m.Books[i].currentPrice, new { @class = "form-control", step = "0.01", min = 0, @autofocus = "autofocus" })</td>
+                    <td class="d-none">@Html.TextBoxFor(m => m.Books[i].BookID)</td>
+                    <td class="d-none">@Html.TextBoxFor(m => m.Books[i].ListDetailID)</td>
+                </tr>
+}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="row m-5">
+            <div class="form-group">
+
+                <div class="col-sm-10">
+
+                    <input type="submit" value="Editar" class="btn btn-primary" />
+
+                </div>
+
+            </div>
+        </div>
+
+}
+
+    </div>
+
+</div>

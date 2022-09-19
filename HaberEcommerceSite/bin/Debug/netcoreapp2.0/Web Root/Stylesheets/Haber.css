@@ -1,0 +1,333 @@
+﻿/* HTML Elements */
+
+html, body {
+
+    margin-top: 40px;
+    
+    height: 100%;
+
+}
+
+/* Bootstrap */
+
+.form-control {
+    
+    color: #40484a;
+    
+    border: 0.15em solid #d4d9dd;
+
+    border-radius: 0.25em;
+
+    outline: none;
+        
+}
+
+.form-control:focus {
+    
+    border-color: #0064ad;
+    
+    outline: none;
+    
+    box-shadow: none;
+
+}
+
+.form-control-light:focus {
+    
+    background-color: #ffffff;
+    
+    border-color: #ffffff;
+    
+    outline: none;
+    
+    box-shadow: none;
+
+}
+
+/* Helpers */
+
+.rounded-corner {
+
+    border-radius: 1em;
+
+}
+
+.overflow-auto {
+
+    overflow: auto;
+
+}
+
+/* Haber */
+
+.haber-background-color {
+    
+    background-color: #007dc6;
+
+}
+
+.haber-color, .haber-text-color-footer {
+
+    color: #007dc6;
+
+}
+
+.ediciones-haber-background {
+    
+    background-image: url(/Images/Bookshelf.jpg);
+
+    background-size: cover;
+
+}
+
+.book-size {
+    
+    width: 120px;
+    
+    height: 200px;
+    
+}
+
+.haber-navbar {
+    
+    border-bottom: 0.5em solid #0064ad;
+
+}
+
+.haber-nav-link, .haber-nav-link:hover, .haber-nav-link:focus, .haber-construction {
+    
+    color: #ffffff;
+    
+    font-weight: 700;
+
+}
+
+.haber-navbar-shrink {
+    
+    height: 4em;
+
+    transition: all 0.5s ease;
+
+}
+
+.haber-navbar-shrink .navbar-nav {
+
+    display: none;
+
+}
+
+.haber-navbar-shrink .form-search-box {
+
+    margin-left: auto;
+
+}
+
+.haber-button {
+    
+    font-weight: 700;
+    
+    color: #ffffff;
+    
+    background-color: #007dc6;
+    
+    border: 0.15em solid #007dc6;
+
+}
+
+.haber-button:focus, .haber-button:hover {
+
+    background-color: #0064ad;
+
+    border-color: #0064ad;
+
+}
+
+.haber-button-light {
+    
+    font-weight: 700;
+    
+    color: #007dc6;
+    
+    background-color: #ffffff;
+    
+    border: 0.15em solid #ffffff;
+
+}
+
+.haber-button-inverse {
+    
+    font-weight: 700;
+    
+    color: #007dc6;
+    
+    border: 0.15em solid #007dc6;
+    
+    background-color: transparent;
+
+}
+
+.haber-button-inverse:focus, .haber-button-inverse:hover {
+    
+    border-color: #0064ad;
+    
+    background-color: #0064ad;
+    
+}
+
+/* Errepar */
+
+.errepar-background-color {
+    
+    background-color: #006f3c;
+
+}
+
+.errepar-background, .contact-errepar-background {
+    background-image: url(/Images/PaperTray.jpg);
+    background-size: cover;
+}
+
+/* Erreius */
+
+.erreius-background-color {
+    
+    background-color: #9e2f28;
+
+}
+
+.erreius-background {
+    background-image: url(/Images/MoleskinNotepad.jpg);
+    background-size: cover;
+}
+
+.haber-text-bold-footer {
+  
+  font-size: medium;
+  
+  font-weight: bold;
+
+}
+
+.haber-text-links-footer, .haber-text-bold-footer,.haber-text-footer{
+
+    color: #ffffff;
+
+}
+
+.haber-color-footer {
+    
+    background-color:#000000;
+
+}
+
+.haber-panel-dashboard-background {
+    
+    background-image: url(/Images/sidebar-5.jpg);
+
+}
+
+.erreius-text-benefits {
+
+    font-size: 24px;
+
+    transition: width 2s;
+
+}
+
+.a {
+ 
+    color: #42b4d6;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+.erreius-text-banner {
+
+    color: #484848;
+
+}
+
+.erreius-text-justify, .errepar-text-justify {
+
+    text-align: justify;
+
+}
+
+.erreius-text-title {
+
+    color: #99312e;
+
+}
+
+.errepar-text-title {
+
+    color: #0a714b;
+
+}
+
+.errepar-text-banner {
+    color: #fed047;
+}
+
+.erreius-background-banner {
+    
+    background-image: url(/Images/Auxiliary/Captura.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+
+}
+
+.errepar-background-banner {
+ 
+    background-color: #0A714B;
+
+}
+
+.erreius-card {
+
+    height: 150px;
+
+    width: 100px;
+
+    margin-top: 50px;
+
+}
+
+.bookDescription-size {
+    width: 200px;
+    height: 350px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    bottom: 30%;
+}
+
+.contact-errepar-background {
+    opacity: 0.8;
+}
+
+.contact-erreius-background {
+    background-image: url(/Images/MoleskinNotepadTransparent.png);
+    background-size: cover;
+  
+}
+
+.contact-haber-background {
+    background-image: url(/Images/BookshelfTransparent.png);
+    background-size: cover;
+}
+
+.haber-text-mail {
+    font-size: medium;
+    font-weight: bold;
+    color: #0064ad;
+}
+
+.haber-size-logo {
+width: 100px;
+
+}

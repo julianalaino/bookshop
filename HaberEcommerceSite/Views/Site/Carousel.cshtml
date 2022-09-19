@@ -1,0 +1,52 @@
+@model List<ImageCarousel>
+
+@{ Layout = "_PanelLayout"; }
+
+<div class="card">
+    
+    <div class="card-body">
+
+        <h4 class="card-title">Im&aacute;genes del Carousel</h4>
+
+        @using (Html.BeginForm("SaveImageCarousel", "Site", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+        {
+            @foreach (ImageCarousel imageCarousel in Model)
+            {
+                <div class="row m-5 ">
+                    
+                    <div class="card col-12 ml-3">
+
+                        <img class="card-img-top" src=@Url.Content(imageCarousel.contentPath)>
+
+                        <div class="card-body ">
+
+                            <div class="py-3 form-group">
+
+                                <input type="text" value=@imageCarousel.Name name="nameImage" class="form-control" />
+
+                                <input type="file" value=@imageCarousel.Image name="imagesCarousel" class="form-control-file" />
+
+                            </div>
+
+                                <div class="py-3 form-group">
+
+                                    <div>
+
+                                        <input type="submit" value="Guardar" class="btn btn-primary" />
+
+                                    </div>
+
+                                </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+        }
+
+    </div>
+
+</div>
+

@@ -1,0 +1,37 @@
+﻿{
+
+  "ConnectionStrings": {
+
+    "HaberConnectionString": "Server= localhost\\MSSQLSERVER2014; Database = alm_haber; USER ID = alm_Haber; Password = Almond2018; MultipleActiveResultSets = True"
+    //"HaberConnectionString": "Server= localhost\\SQL2014; Database = Haber; Trusted_Connection = True; MultipleActiveResultSets = True"
+
+
+  },
+
+  "SMTP": {
+    
+    "Server": "edicioneshaber.com.ar",
+    
+    "User": "webmaster@edicioneshaber.com.ar",
+    
+    "Pass": "Almond2018",
+    
+    "Port": "25",
+    
+    "SSL": "true",
+
+    "To": "info@edicioneshaber.com.ar",
+
+    "Erreius": "erreius@libreriahaber.com.ar",
+
+    "Errepar": "errepar@libreriahaber.com.ar"
+  
+  },
+
+  "FilePaths": {
+
+    "bookCovers": "~/Images/Covers"
+
+  }
+
+}

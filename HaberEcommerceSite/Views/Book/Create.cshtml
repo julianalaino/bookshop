@@ -1,0 +1,229 @@
+
+@model BookViewModel
+
+@{ Layout = "_PanelLayout"; }
+<div class="container">
+    <div class="card">
+
+        <div class="card-body">
+
+            <h4 class="card-title">Nuevo Libro</h4>
+
+            @using (Html.BeginForm("Create", "Book", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="row m-5 pb-5">
+
+                    <div class="col-sm-4 has-danger">                 
+
+                        <div class="form-group has-danger">
+                            @Html.LabelFor(model => model.ISBN, new { @class = "form-control-label" })
+
+                            @Html.TextBoxFor(model => model.ISBN, new { @class = "form-control border form-control-danger", required = "required", @autofocus = "autofocus" })
+                        </div>
+                        @Html.ValidationMessageFor(model => model.ISBN, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group has-danger author">
+                            @Html.LabelFor(model => model.Author, new { @class = "form-control-label" })
+
+                            @Html.ListBoxFor(model => model.Author, Model.Authors, new { @class = "form-control selectpicker form-control-danger ", Multiple = "multiple", id ="example-filterBehavior", data_live_search = "true", required = "required" })
+                        </div>
+
+
+                        @Html.ValidationMessageFor(model => model.Author, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="col-sm-4">
+
+                        <div class="form-group has-danger">
+                            @Html.LabelFor(model => Model.Editorial, new { @class = "form-control-label" })
+
+                            @Html.DropDownListFor(model => Model.Editorial, Model.Editorials, new { @class = "form-control  selectpicker form-control-danger", ID = "Editorial", data_live_search = "true",required = "required" })
+                        </div>
+
+                        @Html.ValidationMessageFor(model => model.Editorial, "", new { @class = "text-danger" })
+
+                    </div>
+
+                </div>
+
+                <div class="row m-5 pt-5">
+
+                    <div class="col-sm-4">
+
+                        @Html.LabelFor(model => Model.Category, new { @class = "control-label" })
+
+                        @Html.DropDownListFor(model => Model.Category, Model.Categories, new { @class = "form-control selectpicker", ID = "ID", data_live_search = "true" })
+
+                        @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="col-sm-4">
+
+                        @Html.LabelFor(x => Model.Subcategory, new { @class = "control-label" })
+
+                        @Html.DropDownListFor(model => Model.Subcategory, Model.Subcategories, new { @class = "form-control selectpicker", ID = "ID", data_live_search = "true" })
+
+                        @Html.ValidationMessageFor(model => model.Subcategory, "", new { @class = "text-danger" })
+
+                    </div>
+                    <div class="col-sm-4">
+
+                        @Html.LabelFor(model => model.Weight, new { @class = "control-label" })
+
+                        @Html.TextBoxFor(model => model.Weight, new { @class = "form-control" })
+
+                        @Html.ValidationMessageFor(model => model.Weight, "", new { @class = "text-danger" })
+
+                    </div>
+
+
+                </div>
+                <div class="row m-5 pt-5">
+                    <div class="col-sm-4">
+
+                        @Html.LabelFor(model => model.Description, new { @class = "control-label" })
+
+                        @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @rows = 10 })
+
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+
+                    </div>
+                    <div class="col-sm-4">
+
+                        @Html.LabelFor(model => model.Content, new { @class = "control-label" })
+
+                        @Html.TextAreaFor(model => model.Content, new { @class = "form-control", @rows = 10 })
+
+                        @Html.ValidationMessageFor(model => model.Content, "", new { @class = "text-danger" })
+
+                    </div>
+
+                </div>
+
+                <div class="row m-5 pt-5">
+
+
+
+                    <div class="col-sm-4">
+
+                        <div class="form-group has-danger">
+                            @Html.LabelFor(model => model.Title, new { @class = "control-label" })
+
+                            @Html.TextBoxFor(model => model.Title, new { @class = "form-control form-control-danger", required = "required" })
+                        </div>
+
+                        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="col-sm-4">
+
+                        @Html.LabelFor(model => model.Subtitle, new { @class = "control-label" })
+
+                        @Html.TextBoxFor(model => model.Subtitle, new { @class = "form-control" })
+
+                        @Html.ValidationMessageFor(model => model.Subtitle, "", new { @class = "text-danger" })
+
+                    </div>
+                    <div class="col-sm-4">
+
+                        @Html.LabelFor(model => model.Pages, new { @class = "control-label " })
+
+                        @Html.TextBoxFor(model => model.Pages, new { @class = "form-control" })
+
+                        @Html.ValidationMessageFor(model => model.Pages, "", new { @class = "text-danger" })
+
+                    </div>
+
+                </div>
+
+                <div class="row m-5 pt-5">
+
+                    <div class="col">
+
+                        <div class="custom-control custom-checkbox">
+
+                            @Html.CheckBoxFor(model => model.Recommended, new { @class = "custom-control-input" })
+
+                            @Html.LabelFor(model => model.Recommended, new { @class = "custom-control-label" })
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4">
+
+                        @Html.LabelFor(model => Model.BookCollection, new { @class = "control-label" })
+
+                        @Html.DropDownListFor(model => Model.BookCollection, Model.BookCollections, new { @class = "form-control selectpicker", data_live_search = "true" })
+
+                        @Html.ValidationMessageFor(model => model.BookCollection, "", new { @class = "text-danger" })
+
+                    </div>
+                    <div class="col-sm-4">
+
+                        @Html.LabelFor(model => Model.Bookbinding, new { @class = "control-label" })
+
+                        @Html.DropDownListFor(model => Model.Bookbinding, Model.Bookbindings, new { @class = "form-control selectpicker form-control-danger", data_live_search = "true" })
+
+                        @Html.ValidationMessageFor(model => model.Bookbinding, "", new { @class = "text-danger" })
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+                <div class="row m-5 pt-5">
+
+                    <div class="card col-sm-12 ml-3">
+
+                        <h5>@Html.LabelFor(model => model.ImagePath, new { @class = "control-label" })</h5>
+
+                        <label> Nombre</label>
+
+                        <input type="Text" name="NameImage" class="form-control" />
+
+                        <input type="file" name="file" class="form-control" />
+
+                        @Html.ValidationMessageFor(model => model.ImagePath)
+
+                    </div>
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="row m-5">
+
+                    <div class="form-group">
+
+                        <div class="col-sm-10">
+
+                            <input type="submit" value="Guardar" class="btn btn-primary" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+
+    </div>
+
+</div>

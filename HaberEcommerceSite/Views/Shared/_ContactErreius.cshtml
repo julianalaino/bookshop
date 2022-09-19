@@ -1,0 +1,182 @@
+﻿@model List<SelectListItem>
+<section>
+    <div class="jumbotron-ContactUs jumbotron-sm-ContactUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+
+                    <h1 class="h1">
+                        Contactate con Nosotros
+                    </h1>
+                    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                    <strong>¡Muchas gracias!</strong> @ViewBag.Message
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+}
+                    @if (!string.IsNullOrEmpty(ViewBag.MessageError))
+    {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Error!</strong> @ViewBag.MessageError
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-md-flex flex-md-equal my-md-5 pl-md-5 ">
+                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-4 px-md-8 w-100 text-center text-black border contact-erreius-background">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="well well-sm">
+                                    @using (Html.BeginForm("ContactErreius", "Site", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name">
+                                                        Nombre y Apellido
+                                                    </label>
+                                                    <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required="required" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">
+                                                        Email
+                                                    </label>
+                                                    <div class="input-group">
+                                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="required" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="telCel">
+                                                        Teléfono/Celular
+                                                    </label>
+                                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Teléfono/Celular" />
+                                                </div>
+                                                </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="localidad">
+                                                        Localidad
+                                                    </label>
+                                                    <input type="text" class="form-control" name="city" id="city" placeholder="Localidad" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="profession">
+                                                        Profesión
+                                                    </label>
+                                                    <input type="text" class="form-control" name="profession" id="profession" placeholder="Profesión" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="specialty">
+                                                        Especialidad
+                                                    </label>
+                                                    <input type="text" class="form-control" name="specialty" id="specialty" placeholder="Especialidad" />
+                                                </div>
+                                               
+
+                                                </div>
+                                            <div class="col-md-6">
+
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <label>
+                                                            <input type="checkbox" class="form-check-input" name="esSuscriptor" id="esSuscriptor" onclick="ShowHideDiv(this)">
+                                                            Es suscriptor?
+                                                        </label>
+                                                    </div>
+                                                    <div id="numSuscriptor" style="display: none">
+                                                        <input type="text" class="form-control" name="numSuscriptor" id="numSuscriptor" placeholder="Número" />
+                                                    </div>
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Formato">Formato</label>
+                                                        <select id="format" name="format" class="form-control">
+                                                            <option value="Erreius Online">Erreius Online</option>
+                                                            <option value="Erreius Online + Papel (publicación de envío mensual)">Erreius Online + Papel (publicación de envío mensual)</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="card form-group">
+
+                                                        <h5>Temáticas de interes</h5>
+                                                        @for (int i = 0; i < Model.Count(); i++)
+                                                        {
+                                                            <div class="form-check mr-auto">
+
+                                                        @Html.CheckBoxFor(m => m[i].Selected, new { @class = "form-check-input" })
+                                                        @Html.DisplayFor(m => m[i].Text, new { @class = "form-check-label" })
+                                                        @Html.HiddenFor(m => m[i].Value)
+                                                        @Html.HiddenFor(m => m[i].Text)
+                                                        </div>
+                                                    }
+  
+    
+                                                    </div>
+
+                                                    </div>
+                                                <div class="col-md-6 pt-2">
+                                                    <div class="form-group">
+                                                        <label for="name">
+                                                            Mensaje
+                                                        </label>
+                                                        <textarea name="message" id="mensaje" class="form-control" rows="11" cols="25"
+                                                                  placeholder="Mensaje"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 p-3">
+                                                    <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                                        Enviar Mensaje
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="~/Images/ErreiusLogo.png" width="100" />
+                                <form>
+                                    <h3> Atención al cliente</h3>
+                                    <address>
+
+                                        <strong>Haber, Librería.</strong><br>
+                                        <abbr title="Phone">P:</abbr>
+                                        (0221)424-3050<br>
+                                        <abbr class="la la-envelope" title="Mail"><a href="mailto:#" class="haber-text-mail"> Erreius@libreriahaber.com.ar</a></abbr><br>
+
+                                        Local Facultad de Cs. Económicas - Planta Baja - Calle 6 Nº 777 (47 y 48)
+                                        1900 La Plata<br>
+
+                                    </address>
+
+                                    <address>
+
+                                        <strong>Horario</strong><br>
+                                        Lun a Vie: 9:30 - 14:00, 15:30 - 19:30
+                                        Sábados: 9:30-13:00
+
+                                    </address>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+
+</section>

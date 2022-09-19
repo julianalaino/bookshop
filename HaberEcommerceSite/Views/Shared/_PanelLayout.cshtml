@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="es-ar">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="~/Stylesheets/twitter-bootstrap.min.css">
+
+    <link rel="stylesheet" href="~/Stylesheets/Bootstrap.min.css">
+
+    <link rel="stylesheet" href="~/Stylesheets/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="~/Fonts/Line Awesome/Line Awesome.min.css">
+
+    <link rel="stylesheet" href="~/Stylesheets/HaberPanel.css">
+
+    <link rel="shortcut icon" href="~/Images/HaberIco.png">
+
+            <title>Haber-Panel</title>
+
+        </head>
+
+<body>
+
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-nowrap p-0">
+
+        <a class="navbar-brand col-sm-2 m-1 text-center" href="@Url.Action("List", "Book")">Haber</a>
+
+        <ul class="navbar-nav p-3">
+
+            <li class="nav-item text-nowrap">
+
+                <a class="btn btn-light" href="@Url.Action("Logout", "Account")">Cerrar sesion</a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <nav class="col-2 d-block bg-light sidebar">
+
+                <div class="sidebar-sticky">
+
+                    <ul class="nav flex-column text-center">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active" href="@Url.Action("List", "Book")"><i title="Libros" class="la la-3x la-book"></i></a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="nav-link active" href="@Url.Action("List", "Author")"><i title="Autores" class="la la-3x la-user"></i></a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="nav-link active" href="@Url.Action("List", "Editorial")"><i title="Editoriales" class="la la-3x la-edit"></i></a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="nav-link active" href="@Url.Action("List", "Category")"><i title="Categorías" class="la la-3x la-th-list"></i></a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="nav-link active" href="@Url.Action("List", "Subcategory")"><i title="Subcategorías" class="la la-3x la-list"></i></a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="nav-link active" href="@Url.Action("List", "BookCollection")"><i title="Colecciones" class="la la-3x la-bar-chart-o"></i></a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="nav-link active" href="@Url.Action("List", "Bookbinding")"><i title="Encuadernaciones" class="la la-3x la-hdd-o"></i></a>
+
+                        </li>
+                        <li>
+
+                            <a class="nav-link active" href="@Url.Action("List", "Promo")"><i title="Promociones" class="la la-3x la-bullhorn"></i></a>
+
+                        </li>
+                        <li>
+
+                            <a class="nav-link active" href="@Url.Action("Carousel", "Site")"><i title="Carousel" class="la la-3x la-image"></i></a>
+
+                        </li>
+                        <li>
+
+                            <a class="nav-link active" href="@Url.Action("List", "PriceList")"><i title="Lista de Precios" class="la la-3x la-dollar"></i></a>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <main role="main" class="col-sm-10 ml-auto p-2">
+
+                @RenderBody()
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <script src="~/Javascripts/jQuery.min.js"></script>
+
+
+    <script src="~/Javascripts/jquery-ui.min.js"></script>
+
+    <script src="~/Javascripts/Bootstrap.Bundle.min.js"></script>
+
+    <script src="~/Javascripts/bootstrap-select.min.js"></script>
+
+    <script src="~/Javascripts/HaberPanel.js"></script>
+
+
+            </body>
+
+        </html>

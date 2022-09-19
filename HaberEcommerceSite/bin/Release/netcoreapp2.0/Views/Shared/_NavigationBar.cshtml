@@ -1,0 +1,79 @@
+﻿<div class="row">
+
+    <div class="col-12">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark haber-navbar haber-background-color">
+
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="@Url.Action("Index", "Site")">
+
+                    <img src="~/Images/HaberSmallLogo.png" alt="Haber Logo" class="mx-3 haber-size-logo"/>
+
+                </a>
+
+            </div>
+
+            <div class="collapse navbar-collapse p-2" id="navigation-items">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item mx-4 active">
+
+                        <a class="nav-link text-white font-weight-bold" href="@Url.Action("Index", "Site")">Inicio</a>
+
+                    </li>
+
+                    <li class="nav-item mx-4">
+
+                        <a class="nav-link text-white font-weight-bold" href="@Url.Action("Errepar", "Site")">Errepar</a>
+
+                    </li>
+
+                    <li class="nav-item mx-4">
+
+                        <a class="nav-link text-white font-weight-bold" href="@Url.Action("Erreius", "Site")">Erreius</a>
+
+                    </li>
+
+                    <li class="nav-item mx-4">
+
+                        <a class="nav-link text-white font-weight-bold" href="@Url.Action("Editorial", "Site")">Editorial</a>
+
+                    </li>
+
+
+                    <li class="nav-item mx-4">
+
+                        <a class="nav-link text-white font-weight-bold" href="@Url.Action("Contact", "Site")">Contáctanos</a>
+
+                    </li>
+
+
+                    <li class="nav-item mx-4">
+
+                        <a class="btn btn-light font-weight-bold" href="@Url.Action("Shop", "Site")">
+
+                            <i class="la la-lg la-shopping-cart"></i>
+
+                            <span>Tienda de Libros</span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-items">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+        </nav>  
+
+    </div>
+
+</div>

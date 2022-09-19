@@ -1,0 +1,99 @@
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Configuration.json
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Fonts\Line Awesome\Fonts\Line Awesome.eot
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Fonts\Line Awesome\Fonts\Line Awesome.svg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Fonts\Line Awesome\Fonts\Line Awesome.ttf
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Fonts\Line Awesome\Fonts\Line Awesome.woff
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Fonts\Line Awesome\Fonts\Line Awesome.woff2
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Fonts\Line Awesome\Line Awesome.min.css
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\BookCover.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Covers\1.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Covers\2.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Covers\3.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Erreius.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Errepar.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\HaberBigLogo.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\HaberSmallLogo.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\MissingCover.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Javascripts\Bootstrap.Bundle.min.js
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Javascripts\Haber.js
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Javascripts\jQuery.min.js
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Javascripts\Owl.Carousel.min.js
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Stylesheets\Bootstrap.min.css
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Stylesheets\Haber.css
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Stylesheets\Owl.Carousel.min.css
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Stylesheets\Owl.Theme.Default.min.css
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_Bestsellers.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_Carousel.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_EditorialService.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_Footer.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_HighlightedServices.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_Jumbotron.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_Layout.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_NavigationBar.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_RecommendedBooks.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Site\Editorial.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Site\Index.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Site\Shop.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\_ViewImports.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\_ViewStart.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\HaberEcommerceSite.deps.json
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\HaberEcommerceSite.runtimeconfig.json
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\HaberEcommerceSite.runtimeconfig.dev.json
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\HaberEcommerceSite.dll
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\HaberEcommerceSite.pdb
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\obj\Release\netcoreapp2.0\HaberEcommerceSite.csproj.CoreCompileInputs.cache
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\obj\Release\netcoreapp2.0\HaberEcommerceSite.AssemblyInfoInputs.cache
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\obj\Release\netcoreapp2.0\HaberEcommerceSite.AssemblyInfo.cs
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\obj\Release\netcoreapp2.0\HaberEcommerceSite.dll
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\obj\Release\netcoreapp2.0\HaberEcommerceSite.pdb
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\obj\Release\netcoreapp2.0\HaberEcommerceSite.csprojResolveAssemblyReference.cache
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Carousel\Imagen1.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Carousel\Imagen2.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Carousel\Imagen3.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Carousel\Imagen4.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Carousel\Imagen5.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_BookDescription.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_ContactErreius.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_ContactErrepar.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_ContactUs.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_Promo.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_PromoDescription.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Site\BookDescription.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Site\Contact.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Site\ContactErreius.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Site\ContactErrepar.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Site\PromoDescription.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\Administrativo.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\Civil.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\Comercial.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\ErreiusBanner.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\Errepar.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\Errepar.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\ErreparIntegral.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\ErreparJoven.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\ErreparOnline.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\ErreparPremium.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\Familia.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\Laboral.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Auxiliary\Procesal.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Bookshelf.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\BookshelfTransparent.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\Covers\MissingCover.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\EdicionesHaber.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\edicionesHaberLogo.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\ErreiusLogo.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\ErreparLogo.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\MoleskinNotepad.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\MoleskinNotepadErreius.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\MoleskinNotepadTransparent.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\PaperTray.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\PaperTrayErrepar.jpg
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Images\HaberIco.png
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Javascripts\bootstrap-select.min.js
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Javascripts\HaberPanel.js
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Javascripts\jquery-ui.min.js
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Stylesheets\bootstrap-select.min.css
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Stylesheets\HaberPanel.css
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Web Root\Stylesheets\twitter-bootstrap.min.css
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Shared\_MorePromos.cshtml
+E:\Repos\Haber.ecommercesite\HaberEcommerceSite\bin\Release\netcoreapp2.0\Views\Site\MorePromos.cshtml

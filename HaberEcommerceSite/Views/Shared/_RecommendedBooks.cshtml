@@ -1,0 +1,67 @@
+﻿<div class="row mt-5">
+
+    <div class="col-10 offset-1">
+
+        <div class="row">
+
+            <div class="col-10 offset-1">
+
+                <h3 class="text-center">Nuestros Libros Recomendados</h3>
+
+            </div>
+
+        </div>
+        <div class="carousel slide" id="media">
+            <div class="carousel-inner">
+                @{
+                    var list = ViewBag.recommendedBooks as IList<BookViewModel>;
+                    var items = list.Take(4);
+                    var iterations = 0;
+                }
+                @while (items.Count() > 0)
+                {
+                    var active = iterations == 0 ? "active" : "";
+
+                    <div class="carousel-item @active">
+                        <div class="row">
+                            @foreach (var item in items)
+    {
+                        <div class="col-sm-3">
+
+                            <div class="card border-0">
+
+                                <img class="card-img-top mx-auto book-size" src=@Url.Content(@item.ImagePath) alt="Caratula del libro">
+
+                                <div class="card-body text-center">
+
+                                    <h5 class="card-title">
+
+                                        <a href="@Url.Action("BookDescription", "Site", new { ID = @item.ID })">@item.Title</a>
+
+                                    </h5>
+                                </div>
+
+                            </div>
+
+                        </div>
+}
+                        </div>
+                    </div>
+
+                    iterations++;
+                    items = list.Skip(4 * iterations).Take(4);
+                }
+            </div>
+            <a data-slide="prev" href="#media" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a data-slide="next" href="#media" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+</div>

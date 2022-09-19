@@ -1,0 +1,104 @@
+@model PaginatedList<BookViewModel>
+
+@{ Layout = "_PanelLayout"; }
+
+<div class="container">
+
+    <div class="row p-3 mb-3">
+
+        <div class="col-2 p-0">
+
+            <h6 class="my-2">Libros</h6>
+
+        </div>
+
+        <div class="col-6">
+
+            @using (Html.BeginForm("List", "Book", FormMethod.Get, new { @class = "input-group", @enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <input class="form-control form-control-light border border-primary rounded mr-2" type="search" name="SearchString" value="@ViewData["currentFilter"]" placeholder="Buscar">
+
+                <button class="btn btn-primary border border-primary text-white" value="ListSearch" type="submit"><i class="la la-search"></i></button>
+            }
+
+        </div>
+
+        <div class="col-4">
+
+            <div class="btn-group">
+
+                <a href="@Url.Action("Create", "Book")" class="btn btn-large btn-primary pull-right">Crear libro</a>
+
+                <a href="@Url.Action("List", "Book", new { pageIndex = 1})" class="btn btn-secondary text-white">Volver a la lista</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        @foreach (BookViewModel book in Model)
+    {
+
+            <div class="col-sm-3">
+
+                <div class="card border-0">
+
+                    <div class="text-center">
+
+                        <img class="card-img-top book-size" src="@Url.Content(book.ImagePath)" alt="Caratula del libro">
+                    
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center"><a>@book.Title</a></h5>
+
+                        <div class="text-center">
+
+                            <a class="btn la la-edit la-2x mx-2" title="Editar" href="@Url.Action("Edit", "Book", new { ID = book.ID })"></a>
+
+                            <a class="btn la la-trash la-2x mx-1" onclick="return confirm('&iquest Seguro deseas eliminar el libro?');" title="Eliminar" href="@Url.Action("Delete", "Book", new { ID = book.ID })"></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            }
+        </div>
+  
+
+    <div class="row mt-5">
+
+        @{
+            var previousDisabled = Model.HasPreviousPage ? "" : "disabled";
+
+            var nextDisabled = Model.HasNextPage ? "" : "disabled";
+        }
+
+        <div class="col">
+
+            <nav>
+
+                <ul class="pagination haber-panel-pagination">
+
+                    <li class="page-item mx-auto"><a class="btn btn-secondary @previousDisabled" href="@Url.Action("List", "Book", new { pageIndex = Model.PageIndex - 1, currentFilter = @ViewData["CurrentFilter"]})">Anterior</a></li>
+
+                    <li class="page-item mx-auto"><a class="btn btn-secondary @nextDisabled" href="@Url.Action("List", "Book", new { pageIndex = Model.PageIndex + 1, currentFilter = @ViewData["CurrentFilter"]})">Siguiente</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</div>

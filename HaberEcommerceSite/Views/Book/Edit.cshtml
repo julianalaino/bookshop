@@ -1,0 +1,212 @@
+﻿@model BookViewModel
+
+@{ Layout = "_PanelLayout"; }
+
+<div class="card">
+    
+    <div class="mx-auto d-block " style="width: 15rem;">
+    
+        <img src="@Url.Content(Model.ImagePath)">
+     
+    </div>
+    
+    <div class="card-body">
+    
+        <h4 class="card-title">Editar Libro</h4>
+        
+        @using (Html.BeginForm("edit", "Book", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row m-5">
+
+                <div class="col-sm-4 pr-3">
+
+                    @Html.LabelFor(model => model.ISBN, new { @class = "control-label" })
+
+                    @Html.TextBoxFor(model => model.ISBN, new { @class = "form-control", @autofocus = "autofocus" })
+
+                    @Html.ValidationMessageFor(model => model.ISBN, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4 pl-3">
+
+                    @Html.LabelFor(model => model.Author, new { @class = "control-label" })
+
+                    @Html.ListBoxFor(model=>model.Author, Model.Authors, new { @class = "form-control  selectpicker", id = "Author", data_live_search = "true", required = "required", multiple = "multiple" })
+               
+                    @Html.ValidationMessageFor(model => model.Author, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => Model.Editorial, new { @class = "control-label" })
+
+                    @Html.DropDownListFor(model => Model.Editorial, Model.Editorials, new { @class = "form-control selectpicker", id = "ID", data_live_search = "true" })
+
+                    @Html.ValidationMessageFor(model => model.Editorial, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => Model.Category, new { @class = "control-label" })
+
+                    @Html.DropDownListFor(model => Model.Category, Model.Categories, new { @class = "form-control selectpicker", id = "ID", data_live_search = "true" })
+
+                    @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+
+                </div>
+
+            </div>
+        
+            <div class="row m-5">
+        
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(x => Model.Subcategory, new { @class = "control-label" })
+
+                    @Html.DropDownListFor(model => Model.Subcategory, Model.Subcategories, new { @class = "form-control selectpicker", id = "ID", data_live_search = "true" })
+
+                    @Html.ValidationMessageFor(model => model.Subcategory, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => model.Description, new { @class = "control-label" })
+
+                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @autofocus = "autofocus" })
+
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => Model.Bookbinding, new { @class = "control-label" })
+
+                    @Html.DropDownListFor(model => Model.Bookbinding, Model.Bookbindings, new { @class = "form-control selectpicker", data_live_search = "true" })
+
+                    @Html.ValidationMessageFor(model => model.Bookbinding, "", new { @class = "text-danger" })
+
+                </div>
+        
+            </div>
+        
+            <div class="row m-5">
+        
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => model.Weight, new { @class = "control-label" })
+
+                    @Html.TextBoxFor(model => model.Weight, new { @class = "form-control", @autofocus = "autofocus" })
+
+                    @Html.ValidationMessageFor(model => model.Weight, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => model.Title, new { @class = "control-label" })
+
+                    @Html.TextBoxFor(model => model.Title, new { @class = "form-control", @autofocus = "autofocus" })
+
+                    @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => model.Subtitle, new { @class = "control-label" })
+
+                    @Html.TextBoxFor(model => model.Subtitle, new { @class = "form-control", @autofocus = "autofocus" })
+
+                    @Html.ValidationMessageFor(model => model.Subtitle, "", new { @class = "text-danger" })
+
+                </div>
+        
+            </div>
+        
+            <div class="row m-5">
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => Model.BookCollection, new { @class = "control-label" })
+
+                    @Html.DropDownListFor(model => Model.BookCollection, Model.BookCollections, new { @class = "form-control selectpicker", data_live_search = "true" })
+
+                    @Html.ValidationMessageFor(model => model.BookCollection, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => model.Pages, new { @class = "control-label" })
+
+                    @Html.TextBoxFor(model => model.Pages, new { @class = "form-control", @autofocus = "autofocus" })
+
+                    @Html.ValidationMessageFor(model => model.Pages, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => model.Content, new { @class = "control-label" })
+
+                    @Html.TextAreaFor(model => model.Content, new { @class = "form-control", @autofocus = "autofocus" })
+
+                    @Html.ValidationMessageFor(model => model.Content, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    @Html.LabelFor(model => model.Recommended)
+
+                    @Html.CheckBoxFor(model => model.Recommended)
+
+
+                </div>
+
+            </div>
+        
+            <div class="row m-5">
+           
+                <div class="card col-sm-12 ml-3">
+
+                    <h5>@Html.LabelFor(model => model.ImagePath, new { @class = "control-label"})</h5>
+
+                     @Html.TextBoxFor(model => model.ImagePath, new { @class = "control-label", @type = "hidden" })
+
+                    <label> Nombre</label>
+                    
+                    <input type="Text" name="NameImage" class="form-control" />
+
+                    <input type="file" name="file" class="form-control" />
+
+                    @Html.ValidationMessageFor(model => model.ImagePath)
+
+                </div>
+            
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+             </div>
+         
+            <div class="form-group">
+
+                <div class="col-sm-10 m-5">
+
+                    <input type="submit" value="Editar" class="btn btn-primary" />
+
+                </div>
+
+            </div>
+
+        }
+    
+    </div>
+
+</div>

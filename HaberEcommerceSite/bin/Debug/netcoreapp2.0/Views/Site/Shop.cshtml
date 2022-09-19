@@ -1,0 +1,119 @@
+﻿@model PaginatedList<BookViewModel>
+
+<div class="container p-0">
+
+    <header>
+
+        @Html.Partial("_NavigationBar")
+
+    </header>
+
+    <section>
+      
+
+            <div class="row">
+
+                <main role="main" class="col-sm-10 ml-auto ">
+
+                    <div class="row mt-5">
+
+                        <div class="col-sm-12 bg-light rounded-corner">
+
+                            @using (Html.BeginForm("Shop", "Site", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="row">
+
+                        <div class="col-sm-10">
+
+                            <input type="search" placeholder="Encuentra tu proximo libro" value="@ViewData["currentFilter"]" class="form-control p-3" />
+
+                        </div>
+
+                        <div class="col-sm-2">
+
+                            <input class="btn btn-lg btn-primary m-1 text-white" type="submit" value="Buscar" />
+
+                        </div>
+
+                    </div>
+    }
+
+                        </div>
+
+                        <div class="col-sm-12 my-5">
+
+                            <div class="row">
+
+                                @foreach (BookViewModel book in Model)
+                    {
+                        <div class="col-sm-3">
+
+                            <div class="card border-0">
+
+                                <img class="card-img-top mx-auto book-size" src=@Url.Content(book.ImagePath) alt="Caratula del libro">
+
+                                <div class="card-body text-center">
+
+                                    <h5 class="card-title">
+
+                                        <a href="@Url.Action("BookDescription", "Site", new { ID = book.ID })">@book.Title</a>
+
+
+                                    </h5>
+                                    @if (book.Price == 0)
+                        {<p class="font-weight-bold text-danger">AGOTADO</p>}
+            else
+            {
+                <p class="font-weight-bold">$ @string.Format("{0:#.00}", @book.Price)</p>
+}
+
+                                </div>
+
+                            </div>
+
+                        </div>
+        }
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-5">
+
+                        @{
+                var previousDisabled = Model.HasPreviousPage ? "" : "disabled";
+
+                var nextDisabled = Model.HasNextPage ? "" : "disabled";
+                        }
+
+                        <div class="col-sm">
+
+                            <nav>
+
+                                <ul class="pagination haber-panel-pagination">
+
+                                    <li class="page-item mx-5"><a class="btn btn-secondary @previousDisabled" href="@Url.Action("Shop", "Site", new { pageIndex = Model.PageIndex - 1, currentFilter = @ViewData["CurrentFilter"]})">Anterior</a></li>
+
+                                    <li class="page-item mx-auto"><a class="btn btn-secondary @nextDisabled" href="@Url.Action("Shop", "Site", new { pageIndex = Model.PageIndex + 1, currentFilter = @ViewData["CurrentFilter"]})">Siguiente</a></li>
+
+                                </ul>
+
+                            </nav>
+
+                        </div>
+
+                    </div>
+
+                </main>
+
+            </div>
+
+       
+
+    </section>
+
+</div>

@@ -1,0 +1,43 @@
+﻿@model BookViewModel
+
+<div class="row m-4">
+
+    <div class="col">
+
+        <div class="card flex-md-row mb-4 box-shadow">
+
+            <div class="card-body d-flex flex-column align-items-start">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img class="bookDescription-size" src="@Url.Content(Model.ImagePath)" alt="Card image cap">
+
+                    </div>
+
+                    <div class="col-sm-6">
+
+                        <strong class="d-inline-block mb-2 text-primary">@Html.DisplayFor(model => Model.Title, new { @class = "form-control" })</strong>
+
+                        <p class="card-text"><b>@Html.DisplayFor(model => Model.Subtitle, new { @class = "form-control" })</b></p>
+
+                        <p class="card-text erreius-text-justify">@Html.DisplayFor(model => Model.Description, new { @class = "form-control" })</p>
+
+
+                        <p class="card-text erreius-text-justify font-weight-bold">$ @Html.DisplayFor(model => Model.Price, new { @class = "form-control" })</p>
+
+                        <a href="@Url.Action("Contact", "Site")" class="btn btn-primary">Comprar</a>
+
+                    </div>
+
+                    
+                </div>
+
+            
+           
+
+        </div>      
+
+
+    </div>
+
+</div>
+</div>

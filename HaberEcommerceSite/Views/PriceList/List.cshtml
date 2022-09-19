@@ -1,0 +1,71 @@
+@model PaginatedList<PriceList>
+
+@{ Layout = "_PanelLayout"; }
+
+<div class="container">
+
+    <div class="row p-3 mb-3">
+
+        <div class="col-4 p-0">
+
+            <h5>Listas de Precios</h5>
+
+        </div>
+
+        <div class="col-4">
+
+            @using (Html.BeginForm("List", "PriceList", FormMethod.Get, new { @class = "input-group", @enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <input id="txtLanguages" class="form-control form-control-light border border-primary rounded mr-2 " autocomplete="off" type="search" name="SearchString" value="@ViewData["currentFilter"]" placeholder="Buscar">
+       
+        <button class="btn btn-primary border border-primary text-white" value="ListSearch" type="submit"><i class="la la-search"></i></button>
+}
+
+        </div>
+
+        <div class="col-4">
+
+            <div class="btn-group">
+               
+                <a href="@Url.Action("Create", "PriceList")" class="btn btn-large btn-primary pull-right">Crear Lista de Precios</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        @foreach (PriceList priceList in Model)
+    {
+        <div class="col-sm-3">
+
+            <div class="card">
+                
+
+                <div class="card-body">
+
+                    <h5 class="card-title text-center"><a>Lista de Precios-@String.Format("{0:dd/MM/yyyy}", @priceList.ValidityDate)</a></h5>
+
+                    <div class="mx-4">
+
+                        <a class="btn la la-edit la-2x mx-2" title="Editar" href="@Url.Action("Edit", "PriceList", new { ID = priceList.ID })"></a>
+
+                        <a class="btn la la-trash la-2x mx-1" onclick="return confirm('&iquest Seguro deseas eliminar la lista de precios?');" title="Eliminar" href="@Url.Action("Delete", "PriceList", new { ID = priceList.ID })"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+}
+
+    </div>
+
+
+</div>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArOn++W0rw0yNfhYm2zUXAwAAAAACAAAAAAAQZgAAAAEAACAAAADoHMtiUjSxz0zEhPqeSD76+Ga6xsawG6uj10ITikxWqwAAAAAOgAAAAAIAACAAAAAnuPnnJAU6Y1M47F86N4D8WHcSa7NNveGxt/DD78AACSAAAADUTwt3iHclHv1RYSNhAy0YX73fN2J9XYEI+6IXfcKzQkAAAADHB8oxKUUx/s9uNgqQdSjGKhjM1BqQIbp4GOPIFHJ8Dtt11NGcSG5/iOMq2ltHLoGPA4Cpe/5TLfOXFzJ4l1KR</EncryptedPassword>
+    <_PublishTargetUrl>ftp://edicioneshaber.com.ar/prueba.edicioneshaber.com.ar/</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Configuration.json">
+      <publishTime>07/14/2018 00:45:27</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="HaberEcommerceSite.deps.json">
+      <publishTime>07/18/2018 15:22:59</publishTime>
+    </File>
+    <File Include="HaberEcommerceSite.dll">
+      <publishTime>07/18/2018 15:22:53</publishTime>
+    </File>
+    <File Include="HaberEcommerceSite.pdb">
+      <publishTime>07/18/2018 15:22:53</publishTime>
+    </File>
+    <File Include="HaberEcommerceSite.PrecompiledViews.dll">
+      <publishTime>07/18/2018 15:22:58</publishTime>
+    </File>
+    <File Include="HaberEcommerceSite.PrecompiledViews.pdb">
+      <publishTime>07/18/2018 15:22:58</publishTime>
+    </File>
+    <File Include="HaberEcommerceSite.runtimeconfig.json">
+      <publishTime>07/18/2018 15:22:59</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>03/24/2018 23:53:02</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>03/24/2018 23:53:07</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>03/24/2018 23:53:07</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>03/24/2018 23:53:18</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>03/24/2018 23:53:18</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>03/24/2018 23:53:18</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>03/24/2018 23:53:18</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>03/24/2018 23:53:18</publishTime>
+    </File>
+    <File Include="Web Root/Fonts/Line Awesome/Fonts/Line Awesome.eot">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Fonts/Line Awesome/Fonts/Line Awesome.svg">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Fonts/Line Awesome/Fonts/Line Awesome.ttf">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Fonts/Line Awesome/Fonts/Line Awesome.woff">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Fonts/Line Awesome/Fonts/Line Awesome.woff2">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Fonts/Line Awesome/Line Awesome.min.css">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/Administrativo.jpg">
+      <publishTime>03/28/2018 11:03:46</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/Civil.jpg">
+      <publishTime>03/28/2018 11:03:55</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/Comercial.jpg">
+      <publishTime>03/28/2018 11:04:08</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/ErreiusBanner.jpg">
+      <publishTime>05/13/2018 13:48:14</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/Errepar.jpg">
+      <publishTime>03/18/2014 12:28:10</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/Errepar.png">
+      <publishTime>03/18/2014 12:29:59</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/ErreparIntegral.png">
+      <publishTime>02/04/2018 16:10:06</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/ErreparJoven.png">
+      <publishTime>02/04/2018 16:09:55</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/ErreparOnline.jpg">
+      <publishTime>03/31/2018 17:32:42</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/ErreparPremium.png">
+      <publishTime>02/04/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/Familia.jpg">
+      <publishTime>03/28/2018 11:04:01</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/Laboral.jpg">
+      <publishTime>03/28/2018 11:03:36</publishTime>
+    </File>
+    <File Include="Web Root/Images/Auxiliary/Procesal.jpg">
+      <publishTime>03/28/2018 11:03:07</publishTime>
+    </File>
+    <File Include="Web Root/Images/BookCover.png">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/Bookshelf.jpg">
+      <publishTime>05/07/2018 14:05:41</publishTime>
+    </File>
+    <File Include="Web Root/Images/BookshelfTransparent.png">
+      <publishTime>05/25/2018 11:13:39</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/31.png.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/37.png.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/39.png.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/41.png.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/42.png.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/Imagen1.png">
+      <publishTime>04/27/2018 20:29:32</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/Imagen2.png">
+      <publishTime>04/25/2018 15:08:16</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/Imagen3.png">
+      <publishTime>04/25/2018 15:08:16</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/Imagen4.png">
+      <publishTime>04/25/2018 15:08:16</publishTime>
+    </File>
+    <File Include="Web Root/Images/Carousel/Imagen5.png">
+      <publishTime>04/25/2018 15:08:16</publishTime>
+    </File>
+    <File Include="Web Root/Images/Covers/1.jpg">
+      <publishTime>06/07/2018 17:18:13</publishTime>
+    </File>
+    <File Include="Web Root/Images/Covers/2.jpg">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/Covers/3.jpg">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/Covers/MissingCover.png">
+      <publishTime>04/20/2018 11:32:48</publishTime>
+    </File>
+    <File Include="Web Root/Images/EdicionesHaber.jpg">
+      <publishTime>05/13/2018 13:48:14</publishTime>
+    </File>
+    <File Include="Web Root/Images/edicionesHaberLogo.png">
+      <publishTime>05/25/2018 11:13:39</publishTime>
+    </File>
+    <File Include="Web Root/Images/Erreius.jpg">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/ErreiusLogo.png">
+      <publishTime>05/25/2018 11:13:39</publishTime>
+    </File>
+    <File Include="Web Root/Images/Errepar.png">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/ErreparLogo.png">
+      <publishTime>05/25/2018 11:13:39</publishTime>
+    </File>
+    <File Include="Web Root/Images/HaberBigLogo.png">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/HaberIco.png">
+      <publishTime>05/07/2018 16:55:18</publishTime>
+    </File>
+    <File Include="Web Root/Images/HaberSmallLogo.png">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/MissingCover.png">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/MoleskinNotepad.jpg">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/MoleskinNotepadErreius.jpg">
+      <publishTime>05/13/2018 13:48:14</publishTime>
+    </File>
+    <File Include="Web Root/Images/MoleskinNotepadTransparent.png">
+      <publishTime>05/25/2018 11:13:39</publishTime>
+    </File>
+    <File Include="Web Root/Images/PaperTray.jpg">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Images/PaperTrayErrepar.jpg">
+      <publishTime>05/13/2018 13:48:14</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/bootstrap-select.js">
+      <publishTime>04/16/2018 10:46:16</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/bootstrap-select.js.map">
+      <publishTime>04/16/2018 09:31:17</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/bootstrap-select.min.js">
+      <publishTime>07/13/2018 22:20:47</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/Bootstrap.Bundle.min.js">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/Bootstrap.Bundle.min.js.map">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/Haber.js">
+      <publishTime>05/13/2018 13:48:14</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/HaberPanel.js">
+      <publishTime>07/13/2018 22:20:47</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/jquery-ui.min.js">
+      <publishTime>06/22/2018 12:04:12</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/jQuery.min.js">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/jQuery.min.js.map">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Javascripts/Owl.Carousel.min.js">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/bootstrap-select.css">
+      <publishTime>04/16/2018 09:31:17</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/bootstrap-select.css.map">
+      <publishTime>04/16/2018 09:31:17</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/bootstrap-select.min.css">
+      <publishTime>07/13/2018 22:20:47</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/Bootstrap.min.css">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/Bootstrap.min.css.map">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/Haber.css">
+      <publishTime>05/07/2018 16:55:18</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/HaberPanel.css">
+      <publishTime>06/22/2018 12:04:12</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/Owl.Carousel.min.css">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/Owl.Theme.Default.min.css">
+      <publishTime>03/31/2018 16:44:22</publishTime>
+    </File>
+    <File Include="Web Root/Stylesheets/twitter-bootstrap.min.css">
+      <publishTime>04/16/2018 10:46:16</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>07/18/2018 15:22:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

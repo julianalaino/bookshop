@@ -1,0 +1,35 @@
+﻿{
+
+  "ConnectionStrings": {
+
+    "HaberConnectionString": "Server= localhost\\SQLEXPRESS; Database = Alm_Haber; Trusted_Connection = True; MultipleActiveResultSets = True"
+
+  },
+
+  "SMTP": {
+    
+    "Server": "edicioneshaber.com.ar",
+    
+    "User": "webmaster@edicioneshaber.com.ar",
+    
+    "Pass": "1234",
+    
+    "Port": "25",
+    
+    "SSL": "true",
+
+    "To": "info@edicioneshaber.com.ar",
+
+    "Erreius": "erreius@libreriahaber.com.ar",
+
+    "Errepar": "errepar@libreriahaber.com.ar"
+  
+  },
+
+  "FilePaths": {
+
+    "bookCovers": "~/Images/Covers"
+
+  }
+
+}

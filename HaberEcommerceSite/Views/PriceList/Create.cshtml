@@ -1,0 +1,114 @@
+@model PriceListViewModel
+
+@{ Layout = "_PanelLayout"; }
+
+<div class="card">
+    
+    <div class="card-body">
+        <div class="row m-5">
+            <div class="col-sm-4">
+
+
+                <h4 class="card-title">Nueva Lista de Precios</h4>
+
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-sm-4">
+
+                @using (Html.BeginForm("Create", "PriceList", FormMethod.Get, new { @class = "input-group", @enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.LabelFor(model => Model.Editorial, new { @class = "form-control-label" })
+                @Html.DropDownListFor(model => Model.Editorial, Model.Editorials, new { @class = "form-control selectpicker form-control-light border border-primary rounded mr-2", ID = "Editorial", onchange = "this.form.submit();" })
+
+
+        }
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+        @using (Html.BeginForm("CreatePost", "PriceList", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+
+
+        <div class="row m-5">
+            <div class="col-sm-4">
+
+                @Html.LabelFor(model => Model.ValidityDate, new { @class = "control-label" })
+
+                @Html.TextBoxFor(model => Model.ValidityDate, new { @class = "form-control", @autofocus = "autofocus", type = "date", required = "required" })
+
+                @Html.ValidationMessageFor(Model => Model.ValidityDate, "", new { @class = "text-danger" })
+
+            </div>
+
+            <div class="col-sm-4">
+
+                @Html.LabelFor(model => Model.Observation, new { @class = "control-label" })
+
+                @Html.TextAreaFor(model => Model.Observation, new { @class = "form-control" })
+
+                @Html.ValidationMessageFor(model => Model.Observation, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+        <div class="row m-5">
+            @Html.TextBoxFor(model => model.Editorial, new { @class = "form-control", @type = "hidden" })
+            <div class="col-sm-10">
+
+                <table class="table table-responsive-lg table-bordered">
+                    <thead class="thead-dark">
+
+                        <tr>
+                            <th scope="col">Editorial</th>
+                            <th scope="col">Autor</th>
+                            <th scope="col">T&iacute;tulo</th>
+                            <th>Precio Actual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @for (var i = 0; i < Model.Books.Count(); i++)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(m => m.Books[i].Editorial, new { @class = "form-control", @autofocus = "autofocus" })</td>
+                            <td>@Html.DisplayFor(m => m.Books[i].Author, new { @class = "form-control", @autofocus = "autofocus" })</td>
+                            <td>@Html.DisplayFor(m => m.Books[i].Title, new { @class = "form-control border-0", @autofocus = "autofocus", @readonly = "readonly" })</td>                            
+                            <td>@Html.TextBoxFor(m => m.Books[i].currentPrice, new { @class = "form-control", @step = "0.01", @data_number_to_fixed = "2", @data_number_stepfactor = "100", @autofocus = "autofocus" })</td>
+                            <td class="d-none">@Html.TextBoxFor(m => m.Books[i].BookID)</td>
+                            <td class="d-none">@Html.TextBoxFor(m => m.Books[i].BookID)</td>
+                        </tr>
+                }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="row m-5">
+            <div class="form-group">
+
+                <div class="col-sm-10">
+
+                    <input type="submit" value="Guardar" class="btn btn-primary" />
+
+                </div>
+
+            </div>
+        </div>
+}
+
+    </div>
+
+        </div>
+

@@ -1,0 +1,44 @@
+﻿@model Subcategory
+
+@{ Layout = "_PanelLayout"; }
+
+<div class="card">  
+ 
+    <div class="card-body">
+    
+        <h4 class="card-title">Editar Subcategor&iacutea</h4>
+        
+        @using (Html.BeginForm("edit", "Subcategory", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row m-5">
+                
+                @Html.TextBoxFor(model => model.ID, new { @class = "form-control", @type= "hidden" })
+
+                <div class="col-4 pr-3">
+
+                    @Html.LabelFor(model => model.Description, new { @class = "control-label" })
+
+                    @Html.TextBoxFor(model => model.Description, new { @class = "form-control", @autofocus = "autofocus" })
+
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+
+                </div>
+            
+            </div>
+        
+            <div class="form-group">
+
+                <div class="col-10 m-5">
+
+                    <input type="submit" value="Editar" class="btn btn-primary" />
+
+                </div>
+
+            </div>
+        }
+    
+    </div>
+
+</div>
